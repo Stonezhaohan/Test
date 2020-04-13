@@ -66,7 +66,7 @@ export default class Main extends React.Component {
         <div style={{ width: 345 }}>
           <Block>
             <Upload onChange={this.onChangeFile}>
-              <Button>选择文件</Button>
+              <Button>选择图片</Button>
             </Upload>
             {isExist ? <Button onClick={this.rotate}>旋转</Button> : null}
             {isExist ? <Button onClick={this.save}>保存</Button> : null}
@@ -85,7 +85,7 @@ export default class Main extends React.Component {
           <Block style={{ marginTop: 15 }}>
             <Input
               normalize={normalize.number}
-              width={110}
+              width={113}
               labelWidth={labelWidth}
               maxLength={2}
               value={fontSize}
@@ -95,7 +95,7 @@ export default class Main extends React.Component {
             <Input
               normalize={normalize.number}
               style={{ marginLeft: 5 }}
-              width={117}
+              width={120}
               labelWidth={labelWidth}
               maxLength={3}
               value={watermarkWidth}
@@ -104,7 +104,7 @@ export default class Main extends React.Component {
             />
             <Input
               normalize={normalize.number}
-              width={117}
+              width={120}
               style={{ marginLeft: 5 }}
               labelWidth={labelWidth}
               maxLength={3}
